@@ -1,0 +1,176 @@
+<!--Name: Laura
+Course: EC-software Development
+Teacher: Mr.Hardman
+School: PTEC
+Date Last Modified: May 7th, 2021 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Project</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <link rel="Stylesheet" href="Stylesheet.css">
+
+        <style>
+            /*styling for Title div (Welcome to my website)*/
+            #div 
+            {
+                border: 5px outset#252838;
+                background-color: lightblue;    
+                text-align: center;
+                
+            }
+
+            /* styling for Canada image*/
+            img
+            {
+                float: left; 
+                height: 45%;
+                width: 45%;
+                margin: 7px;
+            }
+
+            /* styling for container for the image and text*/
+            .container 
+            {
+                position: relative;
+                width: 30%;
+            }
+
+            /*styling for image in the fade transition*/
+            #image 
+            {
+                display: block;
+                width: 100%;
+                height: 247px;
+            }
+
+            /*styling for the middle part where you swtich between the image to the text*/
+            .overlay 
+            {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                -webkit-transition: .5s ease;
+                background-color: #008CBA;
+            }
+
+            /*styling for how the transpart the text when hovering*/
+            /*example when I made opacity 0.5 and hovered theimage was still showing*/
+            .container:hover .overlay 
+            {
+                opacity: 1;
+            }
+
+            /* styling for the text inside the trasition*/
+            .text 
+            {
+                color: white;
+                font-size: 24px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-48%, 200%);
+                -ms-transform: translate(-48%, 200%);
+                transform: translate(-48%, 200%);
+                text-align: center;
+            }
+
+            /*styling for my pictures*/
+            .image1
+            {
+                width: 500px;;
+                height: 350px;
+                border: 2px solid black;
+                float:center;
+                margin-left: 6%;
+                margin-bottom: 2%;
+            }
+        </style> 
+    </head>
+    <body style="background-color: #E6E6FA; color: #252838;">
+        <!-- nav bar -->
+        <nav class="fixed">
+            <ul>
+                <li>
+                   <a href="index.html">Home Page</a>
+                </li>
+                <li>
+                   <a href="Atlantic.html"> Atlantic</a>
+                </li>
+                <li>
+                   <a href="Central.html"> Central</a>
+                </li>
+                <li>
+                   <a href="Prairie.html"> Prairie</a>
+                </li>
+                <li>
+                    <a href="West Coast.html"> West Coast</a>
+                </li>
+                <li>
+                    <a href="Northern Territories.html"> Northern Territories</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--space so no content is covered by the navbar-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--div for title of website -->
+        <div id= "div">
+            <p style = "font-size:34px; margin-top: 15px; margin-bottom: 15px;"> Welcome to Canada</p>
+        </div>
+
+        <!--div for the trasition-->
+        <div class="container">
+            <!--image for the trasition, the the night picture of erath  from space-->
+            <img src="https://policyoptions.irpp.org/wp-content/uploads/sites/2/2020/06/Facebook-Why-Canada-may-become-a-great-global-power-this-century.jpg" alt="pic" id="image">
+            <div class="overlay">
+                <div class="text">Canada is the second largest country in the World </div>
+            </div>
+        </div>
+
+        <!--text for page (facts that are beside the picture connected by a  float) -->
+        <p style= "font-size:22px; margin:7px;"> 
+            <span style="font-weight:bold">Population: </span> Almost 38 million people
+            <br>
+            <span style="font-weight:bold">Capital: </span> Ottawa-1.4 million inhabitants 
+            <br>
+            <span style="font-weight:bold">Official Languages: </span> English, French
+            <br>
+            <span style="font-weight:bold">National Anthem: </span> O Canada!
+            <br>
+            <span style="font-weight:bold">National Colours: </span> Red and white
+            <br>
+            <span style="font-weight:bold">National Symbols: </span> Maple leaf, Red & White flag, Maple tree 
+            <br>
+            <span style="font-weight:bold">National Tree: </span> Maple tree
+            <br>
+            <span style="font-weight:bold">National Animal: </span> Beaver
+            <br>
+            <span style="font-weight:bold">Government: </span> The Prime Minister is Justin Trudeau
+            <br>
+            <span style="font-weight:bold">National Day: </span> July 1st
+        </p>
+
+        <!--text for page (extra info about canada that in under the picture-->
+        <p style= "font-size:22px;"> Canada is a large country in the northern hemisphere. The country belongs to the North American continent. Canada borders the Atlantic Ocean in the east, the Pacific Ocean in the west and the Arctic Ocean in the North. Canada's biggest bay, Hudson Bay, was discovered in 1610. Since the 16th century, both French and English kings have ruled over the country. Canada gained independence from Britain in 1867. Today, Queen Elizabeth II of England is still the head of state and the Queen of Canada. It has ten provinces and three territories covering 9.98 million square kilometres (3.85 million square miles), making it the world's second-largest country by total area.</p>
+    
+        <!--pictures at the bottom of the page-->
+        <img src="https://www.mcgilltribune.com/wp-content/uploads/2016/10/stereotypcanada_1.png" alt="picture" class="image1">
+        <img src="https://us.123rf.com/450wm/emirsimsek/emirsimsek1007/emirsimsek100700070/7414777-vector-map-of-canada.jpg?ver=6" alt="pictures" class="image1">
+    </body> 
+</html>    

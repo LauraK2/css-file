@@ -1,0 +1,115 @@
+/*styling for the body of all my pages that are linked to this style sheet*/
+body 
+{
+    background: white ;
+    font: 24px;
+    margin: 2px;
+}
+
+/*styling for the Unorder list for my nav across all the pages*/
+nav ul 
+{
+    display: inline;
+    list-style: none;
+}
+
+/*styling for the list of my pages added to my nav ul*/
+nav li 
+{
+    padding: 2px;
+    margin: 10px;
+    border: 10px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+/*stylling for the indivudal links/anchors*/
+nav a
+{
+    padding: 7px;
+    margin: 2px;
+    border: 2px solid black;
+    background-color: eeffee;
+    color: #68b2e2;
+}
+
+/*styling for when you hover over a anchor/link*/
+nav a:hover, nav a:focus
+{
+    background-color:#91c9ee;
+    color: eeffee;
+}
+
+/*styling for when you have gone on a page and rturn to your orginal spot and it shows you've been to that page*/
+nav a:visited
+{
+    color: blueviolet; 
+}
+
+/*styling for the the nav */
+nav
+{
+    display: inline-block;
+    color: #8026bd;
+    background: #cc8ba7;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    overflow:hidden;
+    z-index: 2;
+}
+
+/*styling for the nav to stay there since positioned as fixed*/
+nav.fixed 
+{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    /*placment of the nav*/
+    transform: translateX(-50%);
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    background-color: whitesmoke;
+    padding: 0px;
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+/*div for my transition to change color*/ 
+.div1
+{
+    width: 50%;
+    height: 37%;
+    margin: 7px;
+    margin-bottom:2px;
+    border:2px outset black;
+    background-color: white;
+    text-align: center;
+    font-size:24px;
+    /*name of the animtion to refernce for the keyframe*/
+    animation-name: Animation;
+    -webkit-animation-name: Animation;
+    /* time time it take for the colors to change*/
+    animation-duration: 7s;
+    -webkit-animation-duration:7s;
+}
+
+/*keyframe contains my start(light-blue)-end(purple) point of my animations for the color change based on my color scheme*/
+@keyframes Animation 
+{
+    from {background-color: rgb(190, 106, 190);}
+    to {background-color: lightblue;}
+}
+
+/* Explation for color scheme*/
+/*I went through the article on color psychology and elimatnated certain colors based on the pupose of my website. 
+I pick blue because the color shows stability, calmness and confidence and when talking about a informatative  
+website I want my website to give of the confidence and to show its a reliable source. As for the purple i 
+picked it because its known to express wisdom and when you have a site with information you want to 
+give off the look that you know what your talking about.*/   
+
+/* On the picture on the home page when you hover over you should see my trasition where text fades into the picture */
+
+
+
+
